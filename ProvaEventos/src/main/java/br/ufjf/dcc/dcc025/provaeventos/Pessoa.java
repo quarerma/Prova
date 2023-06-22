@@ -4,6 +4,7 @@
  */
 package br.ufjf.dcc.dcc025.provaeventos;
 
+import java.util.ArrayList;
 import java.util.List;
 /**
  *
@@ -25,6 +26,7 @@ public class Pessoa {
     public Pessoa(Data dataNascimento, String nome) {
         this.dataNascimento = dataNascimento;
         this.nome = nome;
+        eventos = new ArrayList<>();
     }
     
     public boolean podeParticiparEvento(Evento e){

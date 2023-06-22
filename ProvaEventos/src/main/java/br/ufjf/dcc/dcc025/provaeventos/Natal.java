@@ -18,6 +18,6 @@ public class Natal extends Evento{
     public boolean pessoaPodeParticipar(Pessoa pessoa) {
         int idadeEmDias = 5 * 12 * 30;
         
-        return getData().diferenca(pessoa.getDataNascimento()) >= idadeEmDias && temVaga();   
+        return getData().diferenca(pessoa.getDataNascimento()) >= idadeEmDias && temVaga();
     }
 }

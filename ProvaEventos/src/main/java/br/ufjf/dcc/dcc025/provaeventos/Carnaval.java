@@ -17,8 +17,8 @@ public class Carnaval extends Evento{
     @Override
     public boolean pessoaPodeParticipar(Pessoa pessoa) {
 
-        
-        return getData().diferenca(pessoa.getDataNascimento()) >= idadeEmDias && temVaga();  
+        int idadeEmDias = 18 * 12 * 30;
+        return getData().diferenca(pessoa.getDataNascimento()) >= idadeEmDias && temVaga();
 
     }
     

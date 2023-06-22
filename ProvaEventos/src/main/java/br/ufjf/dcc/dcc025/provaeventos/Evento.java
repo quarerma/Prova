@@ -4,6 +4,7 @@
  */
 package br.ufjf.dcc.dcc025.provaeventos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -42,6 +43,7 @@ public abstract class Evento {
         this.data = data;
         this.Nome = Nome;
         this.capacidade = capacidade;
+        participantes = new ArrayList<>();
     }
     
     
